@@ -79,6 +79,6 @@ VS Code 集成了Git功能，并支持基本的git命令，这使得我们能够
 - [fylstudio-Windows10和Visual Studio Code环境中配置使用Git和GitHub](https://blog.csdn.net/fylstudio/article/details/79106331)
 - [捷风-git终端合并代码的简单使用](https://www.jianshu.com/p/220c6846badf)
 - [廖雪峰的官方网站-Git教程](https://www.liaoxuefeng.com/wiki/896043488029600/896827951938304)
-
+- [Pro Git book](https://git-scm.com/book/zh/v2)
 ---
 ##### **返回[顶部](#home)**
