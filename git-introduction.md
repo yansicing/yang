@@ -12,7 +12,32 @@ excerpt: Git with Visual Studio Code
 __持续更新（updating···）__
 
 ---
-#### Git Bash操作步骤-本地仓库
+#### Git命令
+|常用|命令|
+|---|---|
+|添加到暂存区| git add|
+|提交到版本库| git commit|
+|提交到远程库 | git push|
+
+|辅助	|命令|
+|---|---|
+|初始化仓库|	git init|
+|克隆代码	|git clone|
+|比较差异	|git diff|
+|查看状态|	git status|
+|查看日志|	git log|
+|检出代码	|git checkout|
+|重置代码|	git reset|
+|恢复进度	|git stash|
+|里程碑	|git tag|
+|回滚操作	|git revert|
+|获取（不合并）	|git fetch|
+|合并操作	|git merge|
+|获取并合并(fetch+merge)	|git pull|
+|rebase命令（可以处理冲突和合并提交）	|git rebase|
+
+---
+#### 本地仓库-Git Bash操作
 * 安装Git
 * 打开`Git Bash`配置用户名和邮箱：
 > `git config --global user.name "Your Name"`<br>
@@ -52,18 +77,14 @@ __持续更新（updating···）__
 > `rm readme.txt`<br>
 > `git commit -a`
 
-
-
-
-
-
-#### 4. 远程仓库-提交代码到Github
+----
+#### 远程仓库-提交代码到Github
 * 创建SSH Key
 > `ssh-keygen -t rsa –C "youremail@example.com"`<br>
 
 > `登录Github---Settings---SSH and GPG Keys---New SSH Key---Title---Key---粘贴id_rsa.pub文件内容---Add SSH Key`
 * 测试连接：`git -T git@github.com`
-##### 4.1 先有本地库，后有远程库
+##### 1. 先有本地库，后有远程库
 * 在Github上创建远程仓库：`yang`（空）
 * 将已有的本地仓库`yang`（非空）与之关联
 > `git init`<br>
@@ -76,44 +97,18 @@ __持续更新（updating···）__
 * 提交：`git push origin master`
 * 拉取：`git pull origin master`
 
-##### 4.2 克隆远程库到本地
+##### 2. 克隆远程库到本地
 * 在Github上创建远程仓库：`yang`（非空）
 * 克隆远程库到本地
 > `git clone git@github.com:yansicing/yang.git`<br>
 
-
-#### Git命令
-|常用|命令|
-|---|---|
-|添加到暂存区| git add|
-|提交到版本库| git commit|
-|提交到远程库 | git push|
-
-|辅助	|命令|
-|---|---|
-|初始化仓库|	git init|
-|克隆代码	|git clone|
-|比较差异	|git diff|
-|查看状态|	git status|
-|查看日志|	git log|
-|检出代码	|git checkout|
-|重置代码|	git reset|
-|恢复进度	|git stash|
-|里程碑	|git tag|
-|回滚操作	|git revert|
-|获取（不合并）	|git fetch|
-|合并操作	|git merge|
-|获取并合并(fetch+merge)	|git pull|
-|rebase命令（可以处理冲突和合并提交）	|git rebase|
-
+---
+#### Visual Studio Code操作步骤
 VS Code 集成了Git功能，并支持基本的git命令，这使得我们能够在开发过程方便的提交和获取代码
 
 使用版本控制系统，要以**纯文本**方式编写文件。因为文本是有编码的，比如中文有常用的GBK编码，日文有Shift_JIS编码，如果没有历史遗留问题，强烈建议使用标准的`UTF-8`编码，所有语言使用同一种编码，既没有冲突，又被所有平台所支持。
 
 不要使用Windows自带的记事本编辑任何文本文件。原因是Microsoft开发记事本的团队在保存UTF-8编码的文件时，他们在每个文件开头添加了0xefbbbf（十六进制）的字符，会遇到很多不可思议的问题。比如，网页第一行可能会显示一个“?”，明明正确的程序一编译就报语法错误，等等。建议使用Notepad++代替记事本，记得把Notepad++的默认编码设置为UTF-8 without BOM即可
-
-#### Visual Studio Code操作步骤
-
 ##### 1. Git存储库初始化
 * 新建仓库工作目录`yang`
 * 将`yang`添加到Resource manager中
@@ -130,7 +125,7 @@ VS Code 集成了Git功能，并支持基本的git命令，这使得我们能够
 * 发布分支上传远程仓库：Publish Branch/Push
 * 拉取：Pull
 ##### 3. 克隆远程仓库
-* 在工作目录克隆远程代码仓库，然后用Visual Studio Code 打开亦可
+* 在工作目录克隆远程代码仓库，然后用Visual Studio Code 打开
 
 ---
 
