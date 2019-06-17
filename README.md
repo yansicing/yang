@@ -1,3 +1,4 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/yansicing/yang.svg)
 ## [电子科技大学资源共享平台](https://github.com/Xovee/uestc-course) 
 
 在众多网友的积极参与和努力下，电子科技大学资源共享平台诞生了。尽管本仓库还有很多问题，但至少覆盖了电子科技大学考研及研究生阶段大部分的课程资料，并且还将持续补充和完善。
