@@ -1,4 +1,4 @@
-> # Deep Learning Is All You Need
+> ## Deep Learning All You Need
 
 <b><details><summary>:smile:Python基础</summary></b>
 
@@ -8,7 +8,7 @@
 
 </details>
 
-<b><details><summary>??机器学习理论</summary></b>
+<b><details><summary>机器学习理论</summary></b>
 
 - 更新中
 
